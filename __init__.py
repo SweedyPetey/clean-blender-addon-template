@@ -3,9 +3,9 @@
 bl_info = {
     "name": "My Example Extension",
     "description": "Your add-on description.",
-    "author": "Your Signature",
+    "author": "Peter Asp",
     "version": (1, 0, 0),
-    "blender": (4, 2, 0),
+    "blender": (5, 2, 0),
     "location": "3D Viewport > Sidebar > Hello World",
     # "doc_url": "https://github.com/{username}/{repo-name}",
     # "tracker_url": "https://github.com/{username}/{repo-name}/issues",
@@ -31,18 +31,24 @@ bl_info = {
 _needs_reload = "bpy" in locals()
 
 import bpy
-from . import addon_preferences
-from . import hello_world_module
-from . import simple_module
+#from . import addon_preferences
+#from . import hello_world_module
+#from . import simple_module
+#from . import new_module
+from . import house_module
+#from. import modal_operator
 
 
 if _needs_reload:
     from importlib import reload
 
     # Specify the modules to reload during development
-    reload(addon_preferences)
-    reload(hello_world_module)
-    reload(simple_module)
+#    reload(addon_preferences)
+#    reload(hello_world_module),
+#    reload(simple_module)
+#    reload(new_module)
+    reload(house_module)
+   # reload(modal_operator)
 # fmt: on
 
 
@@ -52,9 +58,12 @@ if _needs_reload:
 
 
 modules = [
-    addon_preferences,
-    hello_world_module,
-    simple_module,
+#    addon_preferences,
+#    hello_world_module,
+#    simple_module,
+    house_module
+    #modal_operator
+#    new_module
 ]
 
 
