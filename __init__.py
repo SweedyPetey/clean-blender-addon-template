@@ -35,7 +35,7 @@ import bpy
 #from . import hello_world_module
 #from . import simple_module
 #from . import new_module
-from . import house_module
+from . import house_builder
 #from. import modal_operator
 
 
@@ -47,7 +47,7 @@ if _needs_reload:
 #    reload(hello_world_module),
 #    reload(simple_module)
 #    reload(new_module)
-    reload(house_module)
+    reload(house_builder)
    # reload(modal_operator)
 # fmt: on
 
@@ -61,7 +61,7 @@ modules = [
 #    addon_preferences,
 #    hello_world_module,
 #    simple_module,
-    house_module
+    house_builder
     #modal_operator
 #    new_module
 ]
